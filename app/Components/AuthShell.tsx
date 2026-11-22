@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import suiteShowcase from "@/src/assets/images/sherryhomes_suite_showcase_1795027664296.jpg";
+import BrandLogo from "@/app/Components/BrandLogo";
 
 interface AuthShellProps {
   title: string;
@@ -41,8 +42,9 @@ export default function AuthShell({
             <div>
               <Link
                 href="/"
-                className="font-display text-2xl font-semibold tracking-tight text-white">
-                SherryHomes
+                aria-label="SherryHomes Home"
+                className="inline-flex items-center rounded-xl bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                <BrandLogo size="md" />
               </Link>
             </div>
             <div className="max-w-md space-y-3">
@@ -63,6 +65,9 @@ export default function AuthShell({
         <div className="flex flex-col justify-center px-4 py-8 sm:px-8 lg:col-span-6 lg:px-12 xl:px-16">
           <div className="mx-auto w-full max-w-md">
             <div className="rounded-2xl border border-sky-200/80 bg-white p-6 shadow-sm sm:p-8">
+              <div className="mb-4 lg:hidden">
+                <BrandLogo size="sm" />
+              </div>
               <div className="mb-6 space-y-1.5">
                 <h1 className="font-display text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl text-balance">
                   {title}

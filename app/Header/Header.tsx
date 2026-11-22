@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import UserProfileWrapper from "../Components/UserProfileWrapper";
+import BrandLogo from "../Components/BrandLogo";
 
 const NAV_LINKS = [
   { href: "/", label: "Explore Stays" },
@@ -36,8 +37,9 @@ function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:gap-8 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="font-display text-xl font-semibold tracking-tight text-slate-900 whitespace-nowrap shrink-0 sm:text-2xl">
-          SherryHomes
+          aria-label="SherryHomes Home"
+          className="inline-flex items-center shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600">
+          <BrandLogo size="md" />
         </Link>
 
         <nav

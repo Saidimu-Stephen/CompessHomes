@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   title: "SherryHomes — Curated Apartment Stays & Hosting",
   description:
     "Browse curated apartment suites, check real-time availability calendars, manage payments, message hosts directly, and oversee future bookings.",
+  icons: {
+    icon: "/assets/aistudio/image_2781b1e4.png",
+    apple: "/assets/aistudio/image_2781b1e4.png",
+  },
 };
 
 export default function RootLayout({

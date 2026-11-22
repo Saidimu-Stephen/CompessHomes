@@ -2,16 +2,17 @@
 
 import React from "react";
 import Link from "next/link";
+import BrandLogo from "../Components/BrandLogo";
 
 function Footer() {
   return (
     <footer className="border-t border-sky-200/80 bg-white text-slate-600">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-4 py-8 sm:flex-row sm:items-center sm:px-6 lg:px-8">
         <div>
-          <span className="font-display text-lg font-semibold text-slate-900">
-            SherryHomes
-          </span>
-          <p className="mt-1 text-xs text-slate-500">
+          <Link href="/" aria-label="SherryHomes Home" className="inline-block">
+            <BrandLogo size="md" />
+          </Link>
+          <p className="mt-1.5 text-xs text-slate-500">
             © {new Date().getFullYear()} SherryHomes. Curated stays and verified apartments.
           </p>
         </div>
